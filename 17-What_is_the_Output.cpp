@@ -14,4 +14,4 @@ int main() {
     }
 }
 
-// Output is hi because a is less then b and c
+// Output is hello because a is less then b So it Doesn't Check Next Conditions in Or Operator
