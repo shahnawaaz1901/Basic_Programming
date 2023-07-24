@@ -20,10 +20,9 @@ using namespace std;
 int main(){
     char ch;
     cin >> ch;
-    int n = ch;             //Convert Character into it's Corresponding ASCII Value
-    if(n >= 65 && n <= 90){
+    if(ch >= 'A' && ch <= 'Z'){
         cout << 1 << endl;
-    }else if(n >= 97 && n <= 122){
+    }else if(ch >= 'a' && ch <= 'z'){
         cout << 0 << endl;
     }else{
         cout << -1 << endl;
