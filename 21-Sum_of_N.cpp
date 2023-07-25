@@ -10,4 +10,5 @@ int main(){
         sum = sum + i;          //add Value to sum
         i++;                    //Increment Value of i
     }
+    cout << sum << endl;
 }
