@@ -2,10 +2,10 @@
 Print Pattern In Following Fasion
 N = 4;
 
-4321
-4321
-4321
-4321
+1111
+2222
+3333
+4444
 */
 
 #include<iostream>
@@ -18,10 +18,8 @@ int main(){
     {
         /* code */
         int j = 1;
-        int k = 4;
         while(j <= n){
-            cout << k;
-            k = k - 1;
+            cout << i;
             j = j + 1;
         }
         i = i + 1;
