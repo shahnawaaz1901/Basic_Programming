@@ -5,6 +5,7 @@ int main()
     int x = 10;
     int y = 20;
     if (x++ > 10 && ++y > 20)                   // '&&' Operator Require Both Conditions True to Enter in if Condition
+    // In And Operator ('&&') Second Condition Only Checks if First Condition is true, if First Condition is True then compiler go for Check Second Condition
     {
         cout << "Inside if ";
     }
