@@ -54,6 +54,11 @@ int main()
         {
             cin >> arr[i];
         }
-        cout << "Duplicate Element Is : " << findDuplicate(arr, size) << endl;
+        int duplicateNum = findDuplicate(arr, size);
+        if(duplicateNum != -1){
+            cout << "Duplicate Element Is : " << duplicateNum << endl;
+        }else{
+            cout << "Not Duplicate Element is Present " << endl;
+        }
     }
 }
