@@ -11,7 +11,6 @@ void insertionSort(int *arr, int n){
         for(int j = i - 1; j >= 0;j--){
             if(currenElement < arr[j]){
                 arr[j + 1] = arr[j];
-                arr[j] = currenElement;
             }else{
                 break;
             }
