@@ -5,10 +5,10 @@ void insertionSort(int *arr, int n){
     if(n == 0 || n == 1){
         return;
     }
-
+    int j;
     for(int i = 0; i < n;i++){
         int currenElement = arr[i];
-        for(int j = i - 1; j >= 0;j--){
+        for(j = i - 1; j >= 0;j--){
             if(currenElement < arr[j]){
                 arr[j + 1] = arr[j];
             }else{
