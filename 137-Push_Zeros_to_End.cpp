@@ -27,16 +27,17 @@ Output :
 using namespace std;
 
 void pushZeroToEnd(int *input, int size){
-      int x = 0;
-  for (int i = 0; i < size; i++) {
-    if (input[i] != 0) {
-      int tmp = input[i];
-      input[i] = input[x];
-      input[x] = tmp;
-      x++;
+    int x = 0;
+    for (int i = 0; i < size; i++) {
+        if (input[i] != 0) {
+            int tmp = input[i];
+            input[i] = input[x];
+            input[x] = tmp;
+            x++;
     }
   }
 }
+
 int main(){
     int n;
     cin >> n;
