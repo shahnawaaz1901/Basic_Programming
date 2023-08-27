@@ -41,6 +41,8 @@ bool checkPalindrome(char str[]) {
         if(str[startIndex] != str[lastIndex]){
             return false;
         }
+        startIndex++;
+        lastIndex--;
     }
     return true;
 }
