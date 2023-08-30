@@ -2,6 +2,8 @@
 using namespace std;
 /*
     In 2D Array Arguments it's neccesory to take 2D array column size
+    Because Internally 2D Array Stores in 1D Array so that if We Not Pass
+    Column Size then formula of internal array is broken and our code not work properly
     Column Size is Not m which column input we give
     column size pass which column size we use when array declaration
 */
