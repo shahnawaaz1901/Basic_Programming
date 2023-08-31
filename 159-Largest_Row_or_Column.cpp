@@ -38,19 +38,22 @@ column 0 31
 */
 
 #include<iostream>
+#include<climits>
 using namespace std;
 void largestRowColumnSum(int arr[][100], int n, int m){
     bool rowMaximum = true;
-    int maxSum = 0;
-    int index = -1;
+    int maxRowSum = INT_MIN;
+    int maxColSum = INT_MIN;
+    int rowIndex = 0;
+    int colIndex = 0;
     for(int i = 0; i < n;i++){
         int sum = 0;
         for(int j = 0; j < m;j++){
             sum += arr[i][j];
         }
-        if(sum > maxSum){
-            maxSum = sum;
-            index = i;
+        if(sum > maxRowSum){
+            maxRowSum = sum;
+            rowIndex = i;
         }
     }
     for(int j = 0; j < m;j++){
@@ -58,16 +61,15 @@ void largestRowColumnSum(int arr[][100], int n, int m){
         for(int i = 0; i < n;i++){
             sum += arr[i][j];
         }
-        if(sum > maxSum){
-            maxSum = sum;
-            rowMaximum = false;
-            index = j;
+        if(sum > maxColSum){
+            maxColSum = sum;
+            colIndex = j;
         }
     }
-    if(rowMaximum){
-        cout << "column" << index << maxSum << endl;
+    if(maxRowSum >= maxColSum){
+        cout << "row" << rowIndex << maxRowSum << endl;
     }else{
-        cout << "Row" << index << maxSum << endl;
+        cout << "column" << colIndex << maxColSum << endl;
     }
 }
 int main(){
